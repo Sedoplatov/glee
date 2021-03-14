@@ -1,0 +1,15 @@
+# СТАНДАРТНЫЕ
+.DS_Store
+.idea/
+.idea/*
+.vscode
+*.sublime*
+npm-debug.*
+# СТАНДАРТНЫЕ
+
+
+
+dist/
+node_modules/
+package-lock.json
+app/css/*
