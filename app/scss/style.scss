@@ -78,9 +78,11 @@
     text-align: center;
   }
   &__line {
-    color: #fde7d3;
+    border-right: 1px solid #fde7d3;
+    height: 32px;
   }
 }
+
 
 
 
