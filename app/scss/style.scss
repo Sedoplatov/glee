@@ -15,6 +15,80 @@
 // ГЛОБАЛЬНЫЕ СТИЛИ
 
 
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.menu {
+  &__list {
+    display: flex;
+  }
+  &__list-item:not(:last-child) {
+    margin-right: 34px;
+  }
+  &__list-link {
+    color: $menu;
+    position: relative;
+    @extend %rubik-500;
+  }
+  &__list-link--more::after {
+    content: '+';
+    padding-left: 3px;
+  }
+}
+
+.user-nav {
+  display: flex;
+  &__link {
+    position: relative;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #fcd7b6;
+    width: 178px;
+    border-radius: 21px;
+    align-items: center;
+    margin: 0 20px;
+  }
+  &__link--search {
+    background-color: #edf1f4;
+    border-radius: 50%;
+    padding: 17px;
+  }
+  &__link--dots {
+    background-color: $button;
+    padding: 15px;
+    border-radius: 50%
+  }
+  &__num {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    top: -8px;
+    right: -8px;
+    @extend %dms-500;
+    background-color: #fff;
+    font-size: 10px;
+    line-height: 1.6;
+    text-align: center;
+  }
+  &__line {
+    color: #fde7d3;
+  }
+}
+
+
+
+
+
+
+
+
 
 
 
