@@ -1,13 +1,16 @@
 $title: #191919;
 $menu: #436372;
-$button: #a3bbc8;
+$accent: #a3bbc8;
 $cart-title: #243f4d;
+$bg: #fef7f0;
+$footer-title: #1f2044;
+$footer-text: #7b7b7b;    
 
 %rubik-400 {
   font-family: 'Rubik-Regular', sans-serif;
   font-weight: 400;
 }
-
+      
 %rubik-500 {
   font-family: 'Rubik-Medium', sans-serif;
   font-weight: 500;
@@ -19,16 +22,34 @@ $cart-title: #243f4d;
 }
 
 %dms-400 {
-  font-family: 'Rubik-Regular', sans-serif;
+  font-family: 'DMSans-Regular', sans-serif;
   font-weight: 400;
 }
 
 %dms-500 {
-  font-family: 'Rubik-Medium', sans-serif;
+  font-family: 'DMSans-Medium', sans-serif;
   font-weight: 500;
 }
 
 %dms-700 {
-  font-family: 'Rubik-Bold', sans-serif;
+  font-family: 'DMSans-Bold', sans-serif;
   font-weight: 700;
+}
+
+%poppins-700 {
+  font-family: 'Poppins-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%btn {
+  border: none;
+  color: #fff;
+  background-color: $accent;
+  cursor: pointer;
+}
+
+%a {
+  @extend %rubik-400;
+  color: $footer-text;
+  font-size: 14px;
 }
