@@ -5,6 +5,7 @@ $cart-title: #243f4d;
 $bg: #fef7f0;
 $footer-title: #1f2044;
 $footer-text: #7b7b7b;    
+$filter: #8b8b8b;
 
 %rubik-400 {
   font-family: 'Rubik-Regular', sans-serif;
@@ -45,6 +46,16 @@ $footer-text: #7b7b7b;
   border: none;
   color: #fff;
   background-color: $accent;
+  cursor: pointer;
+}
+
+%filter {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  @extend %dms-700;
+  font-size: 16px;
+  color: $filter;
   cursor: pointer;
 }
 
