@@ -25,3 +25,10 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
+.title{
+  @extend %dms-700;
+  font-size: 36px;
+  text-align: center;
+  color: $title;
+  margin-bottom: 4px;
+}
