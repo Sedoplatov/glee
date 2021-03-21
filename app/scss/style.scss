@@ -240,7 +240,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 40px 30px;
-    margin-bottom: 86px;
+    margin-bottom: 90px;
   }
   &__item {
     box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
@@ -306,39 +306,51 @@
 }
 
 .product-bottom {
-  padding: 80px 0 50px;
+  padding-bottom: 50px;
   &__inner {
     display: flex;
     justify-content: space-between;
   }
   &__item {
-    background-color: #feefe2;
-    padding: 80px 0 96px;
+    // background-color: #feefe2;
+    // padding: 80px 0 96px;
+    background-image: url('../images/products/lamp-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-bottom: 84px;
     max-width: 870px;
+    max-height: 500px;
     width: 100%;
     display: flex;
     justify-content: center;
-    overflow: visible;
-    max-height: 390px;
+    // max-height: 390px;
     &:first-child {
       margin-right: 30px;
     }
   }
+  &__images {
+    width: 270px;
+  }
   &__item-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 196px;
     max-width: 340px;
     color: $cart-title;
     position: relative;
+    // margin-left: 50px;
   }
   &__title {
     font-size: 26px;
     line-height: 1.2;
     @extend %dms-700;
-    margin-bottom: 18px;
+    // margin-bottom: 18px;
   }
   &__text {
     font-size: 16px;
     @extend %rubik-400;
-    margin-bottom: 28px;
+    // margin-bottom: 28px;
   }
   &__link {
     display: block;
