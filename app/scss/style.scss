@@ -259,6 +259,11 @@
       }
     }
   }
+  &__img {
+    width: 240px;
+    height: 210px;
+    object-fit: contain;
+  }
   &__socials {
     position: absolute;
     top: 51%;
@@ -306,36 +311,31 @@
 }
 
 .product-bottom {
-  padding-bottom: 50px;
+  padding-top: 98px;
   &__inner {
     display: flex;
     justify-content: space-between;
   }
   &__item {
-    // background-color: #feefe2;
-    // padding: 80px 0 96px;
-    background-image: url('../images/products/lamp-bg.jpg');
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    padding-bottom: 84px;
+    background-color: #feefe2;
+    padding: 80px 0 84px;
     max-width: 870px;
-    max-height: 500px;
+    max-height: 390px;
     width: 100%;
     display: flex;
     justify-content: center;
-    // max-height: 390px;
     &:first-child {
       margin-right: 30px;
     }
   }
   &__images {
     width: 270px;
+    margin-top: -179px;
   }
   &__item-box {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding-top: 196px;
     max-width: 340px;
     color: $cart-title;
     position: relative;
