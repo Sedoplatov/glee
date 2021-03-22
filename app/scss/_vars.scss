@@ -64,3 +64,10 @@ $filter: #8b8b8b;
   color: $footer-text;
   font-size: 14px;
 }
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
