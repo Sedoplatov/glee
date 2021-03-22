@@ -6,5 +6,6 @@ $(function(){
    });
 
    var mixer = mixitup('.products-week__items');
-
+   var mixer = mixitup('.new-design__items');
+   
 });
