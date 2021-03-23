@@ -770,7 +770,150 @@
   color: $cart-title;
 }
 
+// ABOUT US
+.mission {
+  padding: 120px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between
+  }
+  &__images {
+    max-width: 570px;
+    height: 676px;
+  }
+  &__img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+  &__box {
+    max-width: 570px;
+    padding: 80px 0 80px 16px;
+    @extend %rubik-400;
+    color: $cart-title;
+  }
+  &__numbers {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 40px;
+  }
+  &__num {
+    font-size: 140px;
+    line-height: 0.8;
+    @extend %rubik-700;
+    color: $accent;
+    margin-right: 30px;
+  }
+  &__descr {
+    &:last-child {
+      padding-bottom: 2px;
+    }
+  }
+  &__title-about,
+  &__item-title {
+    font-size: 36px;
+    line-height: 0.8;
+    @extend %dms-700;
+  }
+  &__title {
+    margin-bottom: 40px;
+  }
+  &__text {
+    padding-bottom: 64px;
+    margin-bottom: 36px;
+    border-bottom: 2px solid #e6eaf0;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    padding-left: 60px;
+    position: relative;
+    padding-right: 22px;
+    @extend %dms-700;
+    &:not(:last-child) {
+      border-right: 1px solid #e6eaf0;
+      padding-right: 30px;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      top: 12px;
+      left: 0;
+    }
+  }
+  &__item-note::before {
+    background-image: url('../images/decor/note.svg');
+    width: 36px;
+    height: 38px;
+  }
+  &__item-voice::before {
+    background-image: url('../images/decor/voice.svg');
+    width: 43px;
+    height: 39px;
+  }
+  &__item-medal::before {
+    background-image: url('../images/decor/medal.svg');
+    width: 42px;
+    height: 40px;
+  }
+  &__item-title {
+    line-height: 1.3;
+  }
+  &__item-text {
+    color: #4c4c4c;
+    padding-left: 4px;
+  }
+}
 
+.advantage {
+  padding: 80px 0;
+  background-color: #fcd7b6;
+  &__items {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+  &__item {
+    padding-top: 70px;
+    color: $cart-title;
+    @extend %dms-700;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 60%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__item--monitor::after {
+    background-image: url('../images/decor/monitor.svg');
+    width: 73px;
+    height: 59px;
+  }
+  &__item--car::after {
+    background-image: url('../images/decor/car.svg');  
+    width: 72px;
+    height: 51px;
+  }
+  &__item--time::after {
+    background-image: url('../images/decor/time.svg');
+    width: 78px;
+    height: 64px;
+  }
+  &__item--medal::after {
+    background-image: url('../images/decor/order.svg');
+    width: 60px;
+    height: 64px;
+  }
+  &__num {
+    font-size: 36px;
+  }
+  &__text {
+    font-size: 18px
+  }
+}
 
 
 
