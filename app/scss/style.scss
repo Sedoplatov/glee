@@ -747,9 +747,11 @@
     color: $cart-title;
     margin-bottom: 12px;
   }
-  &__list {
+  &__box {
     margin-bottom: 46px;
     padding-left: 28px;
+  }
+  &__list {
     list-style: decimal-leading-zero;
   }
   &__item {
