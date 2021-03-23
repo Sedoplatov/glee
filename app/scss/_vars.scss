@@ -7,6 +7,12 @@ $footer-title: #1f2044;
 $footer-text: #7b7b7b;    
 $filter: #8b8b8b;
 $blog: #262626;
+$bg-top: #edf1f4;
+
+%rubik-300 {
+  font-family: 'Rubik-Light', sans-serif;
+  font-weight: 300;
+}
 
 %rubik-400 {
   font-family: 'Rubik-Regular', sans-serif;
@@ -36,6 +42,11 @@ $blog: #262626;
 %dms-700 {
   font-family: 'DMSans-Bold', sans-serif;
   font-weight: 700;
+}
+
+%poppins-600 {
+  font-family: 'Poppins-ExtraBold', sans-serif;
+  font-weight: 600;
 }
 
 %poppins-700 {
