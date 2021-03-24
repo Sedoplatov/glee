@@ -129,23 +129,7 @@
     margin-bottom: 52px;
   }
   &__link {
-    color: #fff; 
-    @extend %rubik-500;
-    font-size: 15px;
-    line-height: 0.8;
-    background-color: $accent;
-    padding: 22px 100px 22px 26px;
-    position: relative;
-    &::before {
-      content: '';
-      background-image: url('../images/slider/arrow-right.svg');
-      position: absolute;
-      width: 22px;
-      height: 9px;
-      right: 19px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
+    @extend %link;
   }
   .slick-dots {
     display: flex;
@@ -813,6 +797,7 @@
     font-size: 36px;
     line-height: 0.8;
     @extend %dms-700;
+    color: $cart-title;
   }
   &__title {
     margin-bottom: 40px;
@@ -914,6 +899,92 @@
     font-size: 18px
   }
 }
+
+.team {
+  padding: 120px 0;
+  color: $cart-title;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__descr {
+    max-width: 304px;
+  }
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__text {
+    @extend %rubik-400;
+    margin-bottom: 40px;
+  }
+  &__link {
+    @extend %link;
+    padding: 16px 66px 16px 22px;
+    border-radius: 4px;
+  }
+  &__items {
+    max-width: 770px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 100px 10px;
+  }
+  &__item {
+
+  }
+  &__images {
+    position: relative;
+    max-width: 370px;
+    height: 320px;
+  }
+  &__img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__box {
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    padding: 0 22px;
+    max-width: 324px;
+    width: 100%;
+    height: 109px;
+    background-color: #fff;
+    bottom: -60px;
+    align-items: center;
+  }
+  &__name {
+    color: $menu;
+    @extend %dms-700;
+    font-size: 22px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+  }
+  &__function {
+    @extend %rubik-400;
+    color: #565872;
+  }
+  &__contact {
+    display: flex;
+    align-items: center;
+  }
+  &__contact-link {
+    width: 40px;
+    height: 40px;
+    background-color: #f6f6f6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__contact-link:not(:last-child) {
+    margin-right: 7px;
+  }
+}
+
+
 
 
 

@@ -71,6 +71,26 @@ $bg-top: #edf1f4;
   cursor: pointer;
 }
 
+%link {
+  color: #fff; 
+  @extend %rubik-500;
+  font-size: 15px;
+  line-height: 0.8;
+  background-color: $accent;
+  padding: 22px 100px 22px 26px;
+  position: relative;
+  &::before {
+    content: '';
+    background-image: url('../images/slider/arrow-right.svg');
+    position: absolute;
+    width: 22px;
+    height: 9px;
+    right: 19px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
 %a {
   @extend %rubik-400;
   color: $footer-text;
