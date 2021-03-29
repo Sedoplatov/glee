@@ -91,6 +91,14 @@ $bg-top: #edf1f4;
   }
 }
 
+%checkbox-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
 %a {
   @extend %rubik-400;
   color: $footer-text;
