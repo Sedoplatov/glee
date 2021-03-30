@@ -1181,6 +1181,8 @@
 }
 
 .shop-product {
+  max-width: 446px;
+  max-width: 100%;
   &__inner {
     width: 100%;
     display: flex;
@@ -1190,6 +1192,101 @@
     margin-bottom: 68px;
     .products-week__item {
       margin-bottom: 40px;
+    }
+  }
+  &__items {
+    margin-bottom: 75px;
+  }
+  &__item {
+    display: flex;
+    margin-bottom: 40px;
+    max-height: 500px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__images {
+    max-width: 370px;
+    width: 100%;
+    margin-right: 30px;
+    padding: 0 22px;
+    border: 3px solid #f2f2f2;
+    position: relative;
+    overflow: hidden;
+    &:hover {
+      .shop-product__socials {
+        transform: translateY(0);
+      }
+    }
+  }
+  &__img {
+    height: 500px;
+    object-fit: contain;
+  }
+  &__socials {
+    position: absolute;
+    top: 60%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(600%);
+    transition: all 0.6s;
+    left: 0;
+    right: 0;
+  }
+  &__link {
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    border-radius: 50%;
+    line-height: 3.6;
+    text-align: center;
+    background-color: #fff;
+    margin: 0 6px;
+      path {
+        transition: all 0.8s;
+      }
+    &:hover {
+      background-color: $accent;
+      path {
+        fill: #fff;
+      }
+    }
+  }
+  &__content {
+    padding: 60px 0 0 30px;
+  }
+  &__list-item {
+    @extend %rubik-400;
+    margin-bottom: 20px;
+  }
+  &__list-name {
+    font-size: 40px;
+    color: #333333;
+    margin-bottom: 10px;
+  }
+  &__list-price {
+    font-size: 30px;
+    color: #333333;
+  }
+  &__list-text {
+    color: $cart-title;
+    overflow: auto;
+    max-height: 100px
+  }
+  &__list-btn {
+    @extend %btn;
+    border: transparent;
+    font-size: 15px;
+    @extend %rubik-400;
+    padding: 15px 48px;
+    border-radius: 4px;
+    transition: all 0.6s;
+    &:hover {
+      background-color: #fff;
+      color: $accent;
+      border: 1px solid $accent;
     }
   }
 }
@@ -1226,6 +1323,9 @@
   &__link--next {
     padding: 0 20px
   }
+}
+.pagination__left {
+  justify-content: flex-start;
 }
 
 
