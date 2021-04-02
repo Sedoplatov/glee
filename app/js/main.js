@@ -1,5 +1,15 @@
 $(function(){
 
+  $('.product-tabs__top-item').on('click', function(e){
+    e.preventDefault();
+    $('.product-tabs__top-item').removeClass('product-tabs__top-item--active');
+    $(this).addClass('product-tabs__top-item--active');
+
+    $('.product-tabs__content-item').removeClass('product-tabs__content-item--active');
+    $($(this).attr('href')).addClass('product-tabs__content-item--active');
+
+  });
+
   $('.product-one__item-num').styler();
 
   $(".filter-products__star").rateYo({
@@ -47,9 +57,15 @@ $(function(){
   });
 
   $('.top-slider__inner').slick({
-  dots: true,
-  arrows: false,
-  autoplay: true,
+    dots: true,
+    arrows: false,
+    autoplay: true,
+  });
+
+  $('.related-box__slide').slick({
+    slidesToShow: 4,
+    infinite: true,
+    slidesToScroll: 1,
   });
 
   var mixer = mixitup('.products-week__items');

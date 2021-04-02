@@ -290,6 +290,7 @@
     @extend %dms-700;
   }
 }
+
 .mixitup-control-active {
   color: $cart-title;
 }
@@ -1496,9 +1497,123 @@
   }
 }
 
+.product-tabs {
+  padding-top: 80px;
+  &__top {
+    display: flex;
+    justify-content: center;
+  }
+  &__top-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    @extend %rubik-500;
+    color: $cart-title;
+    background-color: $bg-top;
+    width: 241px;
+    height: 53px;
+    border-radius: 4px;
+    margin-bottom: 36px;
+    & + .product-tabs__top-item {
+      margin-left: 13px;
+    }
+  }
+  &__top-item--active {
+    color: #fff;
+    background-color: $accent;
+  }
+  &__content-item {
+    color: $cart-title;
+    @extend %rubik-400;
+    display: none;
+  }
+  &__content-item--active {
+    display: block;
+  }
+}
 
+.comments {
+  display: flex;
+  margin-bottom: 40px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  img {
+    min-width: 71px;
+    height: 71px;
+    margin-right: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  &__content-top {
+    display: flex;
+    margin-bottom: 8px;
+    @extend %rubik-400;
+  }
+  &__content-name {
+    color: $title;
+    margin-right: 13px;
+    @extend %rubik-500;
+  }
+  &__content-date {
+    color: $cart-title;
+    padding-left: 13px;
+    position: relative;
+    &::before {
+      content: '|';
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+  &__content-text {
+    @extend %rubik-400;
+    color: $cart-title;
+  }
+  &__content-reply {
+    position: relative;
+    padding-left: 25px;
+    @extend %rubik-500;
+    color: $cart-title;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 13px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url('../images/icon/reply.svg');
+    }
+  }
+}
 
+.related {
+  padding: 30px 26px;
+  .slick-arrow {
+    position: absolute;
+    top: -34px;
+  }
+  .slick-next {
+    right: 0;
+  }
+  .slick-prev {
+    right: 30px;
+  }
+}
 
+.related-box {
+  &__title {
+    font-size: 36px;
+    color: $cart-title;
+    @extend %dms-700;
+  }
+  &__slide-item {
+    padding: 60px 0;
+  }
+}
 
 
 
