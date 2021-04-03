@@ -1591,16 +1591,33 @@
 }
 
 .related {
-  padding: 30px 26px;
+  padding: 54px 0 44px;
   .slick-arrow {
     position: absolute;
-    top: -34px;
+    top: -22%;
+    border: 2px solid $bg-top;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    font-size: 0;
+    cursor: pointer;
+    transition: border-color 0.5s;
+    outline-color: $accent;
+    &:hover {
+      border-color: $accent;
+    }
   }
   .slick-next {
     right: 0;
+    background-image: url('../images/icon/next-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
   }
   .slick-prev {
-    right: 30px;
+    right: 70px;
+    background-image: url('../images/icon/prev-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
@@ -1609,10 +1626,16 @@
     font-size: 36px;
     color: $cart-title;
     @extend %dms-700;
+    margin-bottom: 50px;
+    line-height: 1;
   }
   &__slide-item {
-    padding: 60px 0;
+    padding: 20px 0;
   }
+  .products-week__item {
+    box-shadow: 0px 0px 10px 8px rgba(37, 37, 37, 0.05);
+    margin: 0 auto;
+  } 
 }
 
 
