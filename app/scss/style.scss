@@ -754,6 +754,10 @@
 .blog__top-link--terms {
   color: $cart-title;
 }
+.blog__title--contact,
+.blog__top-link--contact {
+  color: $menu;
+}
 
 // ABOUT US
 .mission {
@@ -1815,6 +1819,8 @@
   }
 }
 
+// BLOG ONE
+
 .blog-one {
   &__item {
     margin-bottom: 0;
@@ -2072,6 +2078,9 @@
     width: 100%;
     height: 120px;
     margin-bottom: 40px;
+    background-image: url('../images/icon/masege-form.svg');
+    background-position: top 20px right 20px;
+    background-repeat: no-repeat;
     &::placeholder {
       @extend %rubik-400;
       font-size: 16px;
@@ -2096,6 +2105,118 @@
     width: 190px;
   }
 }
+
+// CONTACT
+
+.adress {
+  padding: 116px 0 70px;
+  &__description {
+    text-align: center;
+    margin-bottom: 62px;
+  }
+  &__descr {
+    color: $accent;
+    @extend %poppins-700;
+    line-height: 1.2;
+  }
+  &__title {
+    color: $menu;
+    font-size: 35px;
+    @extend %dms-700;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+  &__item {
+    padding: 70px 0;
+    max-width: 370px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fbfbfb;
+    border: 2px solid transparent;
+    path {
+      fill: $accent;
+      transition: all 0.5s;
+    }
+    &:hover,
+    &:focus {
+      border: 2px solid $menu;
+      .adress__item-images {
+        background-color: $menu;
+      }
+      path {
+        fill: #fff;
+      }
+    }
+  }
+  &__item-images {
+    background-color: #fff;
+    border-radius: 14px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    transition: all 0.5s;
+    margin-bottom: 60px;
+  }
+  &__item-title {
+    font-size: 20px;
+    @extend %dms-700;
+    margin-bottom: 14px;
+  }
+  &__item-adress {
+    color: #565872;
+    @extend %rubik-400;
+  }
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0 0;
+  }
+  &__form {
+    max-width: 620px;
+    width: 100%;
+  }
+  &__box-input {
+    margin-bottom: 26px;
+  }
+  &__form-input {
+    max-width: 300px;
+    background-color: #fafafa;
+    border: none;
+    &::placeholder {
+      text-transform: uppercase;
+      color: #565872;
+    }
+  }
+  &__form-textarea {
+    height: 174px;
+    margin-bottom: 30px;
+    background-color: #fafafa;
+    border: none;
+    &::placeholder {
+      text-transform: uppercase;
+      color: #565872;
+    }
+  }
+  &__form-btn {
+    border-radius: 4px;
+  }
+}
+
+#map {
+  max-width: 500px;
+  width: 100%;
+  height: 335px;
+}
+
+
 
 
 // MEDIA STYLE
